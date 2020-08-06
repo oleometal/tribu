@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site":"tribu-acrata",
+    "public": "publico",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
