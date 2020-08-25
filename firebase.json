@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site":"tribu-acrata",
-    "public": "público",
+    "public": "pública",
     "ignore": [
       "firebase.json",
       "**/.*",
