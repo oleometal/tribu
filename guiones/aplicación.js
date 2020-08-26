@@ -1,0 +1,1 @@
+console.info("hola soy aplicación.js")
