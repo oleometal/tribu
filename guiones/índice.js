@@ -2,7 +2,7 @@
 
     let updateButton = document.getElementById('updateDetails');
     let favDialog = document.getElementById('favDialog');
-    let outputBox = document.querySelector('output');
+    let outputBox = document.getElementById('salida');
     let selectEl = document.querySelector('select');
     let confirmBtn = document.getElementById('confirmBtn');
 
