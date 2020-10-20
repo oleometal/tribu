@@ -1,5 +1,16 @@
 "use strict";
 
+
+
+if ('serviceWorker'in navigator){
+    navigator.serviceWorker.register('./Trabajador.js')
+    .then(registro => console.log("Registro de Trabajador Exitoso",registro))
+    .catch(error => console.warn("Error al Registrar el Trabajador",error))
+}
+
+
+
+
     let updateButton = document.getElementById('updateDetails');
     let favDialog = document.getElementById('favDialog');
     let outputBox = document.getElementById('salida');

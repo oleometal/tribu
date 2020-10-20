@@ -1,0 +1,19 @@
+{
+    "name":"tribu",
+    "short_name":"tribu",
+    "description":"¡porque todo esta conectado!",
+    "background_color":"#211111",
+    "theme_color":"#000000",
+    "orientation":"portrait",
+    "display":"standalone",
+    "start_url":"./?utm_source=web_app_manifest",
+    "scope":"./",
+    "lan":"es-HN",
+    "icons":[
+        {
+            "src":"iconos/",
+            "sizes":"48x48",
+            "type":"image/webp"
+        }
+    ]
+}
