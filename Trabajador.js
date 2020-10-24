@@ -1,31 +1,25 @@
 // asignar un nombre y versión al cache
-const NOMBRE_CACHE = 'tribu-v0.0.0';
+const NOMBRE_CACHE = 'tribu-v0.0.4';
     
     
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
-self.addEventListener('install',evento => {
+self.addEventListener('install',(evento) => {
     console.log('instalado');
-    
-        const cacheProm = caches.open(NOMBRE_CACHE)
-            .then(cache => {
-                console.log('agregando archivos')
-                cache.addAll([
-                    '/',
-                    '/estilos/estilo.css',
-                    '/imágenes/fuego-sin-leña.svg',
-                    './index.html',
-                    '/guiones/índice.js'
-                    
-                ]);
-                    
-            });
-           
-            
-    
-            evento.waitUntil(cacheProm)
-});
+    const cacheProm = caches.open(NOMBRE_CACHE)
+    .then(cache => {
+        console.log('agregando archivos')
+        cache.addAll([
+            './',
+            './estilos/estilo.css',
+            './imágenes/fuego-sin-leña.svg',
+            './index.html',
+            './guiones/índice.js'
+            ]);
+        });
+        evento.waitUntil(cacheProm)
+    });
 //una vez que se instala el SW, se activa y busca los recursos para hacer que funcione sin conexión
-self.addEventListener('activate',evento => {
+self.addEventListener('activate',(evento) => {
     const CacheListaBlanca = [NOMBRE_CACHE]
     evento.waitUntil(
         caches.keys()

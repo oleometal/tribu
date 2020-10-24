@@ -6,14 +6,16 @@
     "theme_color":"#000000",
     "orientation":"portrait",
     "display":"standalone",
-    "start_url":"./?utm_source=web_app_manifest",
+    "start_url":"./",
     "scope":"./",
     "lan":"es-HN",
     "icons":[
         {
-            "src":"iconos/",
-            "sizes":"48x48",
-            "type":"image/webp"
+            "src":"imágenes/maskable_icon.png",
+            "sizes":"1024x1024",
+            "type":"image/png",
+            "purpose":"any maskable"
+            
         }
     ]
 }

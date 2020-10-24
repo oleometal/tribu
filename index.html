@@ -1,45 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#317EFB"/>
     <title>tribu</title>
     <link rel="icon" type="image/svg" href="imágenes/fuego-sin-leña.svg">
-    <link rel="stylesheet" href="estilos/índice.css">
+    <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
-        <!-- Simple pop-up dialog box, containing a form -->
+  <!-------------------------------------------------------
+    Simple pop-up dialog box, containing a form -->
   <dialog id="favDialog">
     <form method="dialog">
-      
-        <p><label>cambio a raiz firebase:
-        <select>
-          <option></option>
-          <option>Brine shrimp</option>
-          <option>Red panda</option>
-          <option>Spider monkey</option>
-        </select></label></p>
-      
-      <menu>
+      <p>
+        <label>cambio a raiz firebase:
+          <select>
+            <option>Brine shrimp</option>
+            <option>Red panda</option>
+            <option>Spider monkey</option>
+          </select>
+        </label>
+      </p>
+      <ul>
         <button value="cancel">Cancel</button>
         <button id="confirmBtn">Confirm</button>
-      </menu>
+      </ul>
     </form>
   </dialog>
-
-  <menu>
+  <ul>
     <button id="updateDetails">Update details</button>
-  </menu>
+  </ul>
   <output id="salida"aria-live="polite"></output>
-
+  <!--------------------------------------------------
+  formulario para prueba con indexeddb -->
+  <dialog id="addlista">
+    <form id="formulario" class="form" method="dialog">
+      <ladel for="task">Task
+        <input type="text" name="task">
+        <select name="priority">
+          <option value="low">Low</option>
+          <option value="normal">Normal</option>
+          <option value="high">High</option>
+        </select>
+      </ladel>
+      <ul>
+        <button value="cancel">Cancel</button>
+        <button class="button">Add Task</button>
+      </ul>
+    </form>
+  </dialog>
+  <ul>
+    <button id="add">add task</button>
+  </ul>
+  <output id="out"></output>
+<!---------------------------------------------
+Guiones-->
 <script src="guiones/índice.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/7.17.1/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.17.1/firebase-analytics.js"></script>
+
 
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
