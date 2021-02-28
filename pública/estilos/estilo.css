@@ -1,1 +1,33 @@
-p{color :red};
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    line-height: 1.7;
+    font-family: Ubuntu,Roboto, "Open Sans",sans-serif;
+}
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type:block mandatory;
+}
+
+
+article {
+    scroll-snap-align: start;
+    /*min-height: 50vh;*/
+    
+
+}
+aside{
+    position: sticky;
+}

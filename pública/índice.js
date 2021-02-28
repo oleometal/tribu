@@ -1,9 +1,9 @@
-"use strict";
+
 console.info("hola soy índice.js")
 /*---------------------------------------------------
 Registro de Trabajador de Servicio */
 if ('serviceWorker'in navigator){
-    navigator.serviceWorker.register('./mozo.js')
+    navigator.serviceWorker.register('./internuncio.js')
     .then(registro => console.log("Registro de Trabajador Exitoso",registro))
     .catch(error => console.warn("Error al Registrar el Trabajador",error))
 }

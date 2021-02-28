@@ -1,5 +1,5 @@
 // asignar un nombre y versión al cache
-const NOMBRE_CACHE = 'tribu-v0.0.4';
+const NOMBRE_CACHE = 'tribu-v0.0.5';
     
     
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
